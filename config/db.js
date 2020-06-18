@@ -4,8 +4,8 @@ const db = config.get('mongoURI');
 
 const connectDB =async () => {
     try{
-        await mongoose.connect(db, {
-            useNewUrlParser:true
+        await mongoose.connect(db,{
+            useNewUrlParser: true
         });
         
 
@@ -18,6 +18,6 @@ const connectDB =async () => {
         process.exit(1);
 
     }
-};
+}
 
 module.exports =connectDB;
