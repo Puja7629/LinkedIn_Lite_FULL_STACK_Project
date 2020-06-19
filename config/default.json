@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://puja7629:puja123@linkedin-lite-kyd7o.mongodb.net/LinkedIn-Lite?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://puja7629:puja123@linkedin-lite-kyd7o.mongodb.net/LinkedIn-Lite?retryWrites=true&w=majority",
+    "jwtSecret": "mysecrettoken"
 }
