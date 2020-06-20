@@ -257,7 +257,7 @@ router.delete('/experience/:exp_id', auth, async(req, res)=>{
     }
 });
 
-/*
+
 // @route   PUT api/profile/education
 // @desc    Add profile education
 // @acess   Private
@@ -327,6 +327,7 @@ async (req, res) => {
 
 );
 
+
 // @route   DELETE api/profile/education/:edu_id
 // @desc    Delete education from profile
 // @acess   Private
@@ -349,6 +350,8 @@ router.delete('/education/:edu_id', auth, async(req, res)=>{
 
 
     } catch(err) {
+        console.error(err.message);
+        res.status(500).send('Server Error');
 
     }
 });
@@ -356,6 +359,5 @@ router.delete('/education/:edu_id', auth, async(req, res)=>{
 
 
 
-*/
 
 module.exports = router;
