@@ -8,3 +8,7 @@ npm init
 
 ![Chages that should be made ] Insted of test in package.json write this :"start": "node server",
     "server": "nodemon server"
+
+### For Front end part
+
+npx create-react-app client
