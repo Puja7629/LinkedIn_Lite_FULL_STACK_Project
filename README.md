@@ -12,3 +12,8 @@ npm init
 ### For Front end part
 
 npx create-react-app client
+
+cd client/
+npm start and if everything work fine and server open thne close  it and do this,
+
+npm i axios react-router-dom redux react-redux redux-thunk redux-devtools-extension moment react-moment
