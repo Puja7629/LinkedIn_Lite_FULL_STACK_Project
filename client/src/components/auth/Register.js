@@ -1,12 +1,14 @@
 import React,{Fragment, useState} from 'react' ;
-//import axios from 'axios';
 import {Link} from 'react-router-dom ';
-const Register = () => {
+
+const Login = () => {
     const[ formData, setFormData] = useState({
-        name: '',
-        email: '',
-        password: '',
-        password2: ''
+       
+      name: '',
+      email: '',
+      password: '',
+      password2: ''
+        
     });
 
     const {name, email,password, password2} =formData;
@@ -21,43 +23,18 @@ const Register = () => {
         }else{
 
             console.log('SUCESS');
-            /*const newUser ={
-                name,
-                email,
-                password
-            }
-
-            try{
-
-            
-
-                const config ={
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                }
-
-                const body =JSON.stringify(newUser);
-                const res =await axios.post('/api/users',body, config);
-                
-            }catch(err){
-                
-
-
-            } */
-
-            
         }
 
+            
+};
 
-        
-    };
-    return(
-         <Fragment>
-        <h1 className="large text-primary">Sign Up</h1>
-        <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
+    return (
+    <Fragment>
+        <h1 className="large text-primary">Sign In</h1>
+        <p className="lead"><i className="fas fa-user"></i> Sign Into Account</p>
         <form className="form" onSubmit={e => onSubmit(e)}>
-          <div className="form-group">
+
+        <div className="form-group">
             <input 
             type="text" placeholder="Name" 
             name="name" 
@@ -65,7 +42,8 @@ const Register = () => {
             onChange={ e => onChange(e)}
             required />
           </div>
-          <div className="form-group">
+          
+        <div className="form-group">
             <input 
             type="email" 
             placeholder="Email Address" 
@@ -75,11 +53,11 @@ const Register = () => {
             required/>
             <small className="form-text"
               >This site uses Gravatar so if you want a profile image, use a
-              Gravatar email</small
-            >
+              Gravatar email</small>
           </div>
+          
           <div className="form-group">
-            <input
+          <input
               type="password"
               placeholder="Password"
               name="password"
@@ -87,9 +65,10 @@ const Register = () => {
               onChange={ e => onChange(e)}
               minLength="6"
             />
+            
           </div>
           <div className="form-group">
-            <input
+          <input
               type="password"
               placeholder="Confirm Password"
               name="password2"
@@ -98,14 +77,16 @@ const Register = () => {
               minLength="6"
             />
           </div>
-          <input type="submit" className="btn btn-primary" value="Register" />
+          
+          <input type="submit" className="btn btn-primary" value="Login" />
         </form>
         <p className="my-1">
-          Already have an account? <Link to="/login">Sign In </Link>
+        Already have an account? <Link to="/login">Sign In </Link>
         </p>
     
     </Fragment>
+   
 );
-        
 };
+
 export default Register;
