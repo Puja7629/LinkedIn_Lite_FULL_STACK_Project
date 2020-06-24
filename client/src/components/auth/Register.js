@@ -1,6 +1,6 @@
 import React,{Fragment, useState} from 'react' ;
-import axios from 'axios';
-
+//import axios from 'axios';
+import {link} from 'react-router-dom ;'
 const Register = () => {
     const[ formData, setFormData] = useState({
         name: '',
@@ -19,7 +19,9 @@ const Register = () => {
         if(password!==password2){
             console.log('password do not match');
         }else{
-            const newUser ={
+
+            console.log('SUCESS');
+            /*const newUser ={
                 name,
                 email,
                 password
@@ -37,11 +39,12 @@ const Register = () => {
 
                 const body =JSON.stringify(newUser);
                 const res =await axios.post('/api/users',body, config);
+                
             }catch(err){
-                console.error(err.response.data);
+                
 
 
-            }
+            } */
 
             
         }
@@ -49,7 +52,8 @@ const Register = () => {
 
         
     };
-    return <Fragment>
+    return(
+         <Fragment>
         <h1 className="large text-primary">Sign Up</h1>
         <p className="lead"><i className="fas fa-user"></i> Create Your Account</p>
         <form className="form" onSubmit={e => onSubmit(e)}>
@@ -97,10 +101,11 @@ const Register = () => {
           <input type="submit" className="btn btn-primary" value="Register" />
         </form>
         <p className="my-1">
-          Already have an account? <a href="login.html">Sign In</a>
+          Already have an account? <Link to="/login">Sign In </Link>
         </p>
     
-    </Fragment>;
+    </Fragment>
+);
         
 };
 export default Register;
