@@ -1,7 +1,7 @@
 import React,{Fragment, useState} from 'react' ;
 import {Link} from 'react-router-dom ';
 
-const Login = () => {
+const Register = () => {
     const[ formData, setFormData] = useState({
        
       name: '',
@@ -78,7 +78,7 @@ const Login = () => {
             />
           </div>
           
-          <input type="submit" className="btn btn-primary" value="Login" />
+          <input type="submit" className="btn btn-primary" value="Register" />
         </form>
         <p className="my-1">
         Already have an account? <Link to="/login">Sign In </Link>
