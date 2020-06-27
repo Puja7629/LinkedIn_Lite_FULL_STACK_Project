@@ -1,5 +1,0 @@
-{
-    "mongoURI": "mongodb+srv://puja7629:puja123@linkedin-lite-kyd7o.mongodb.net/LinkedIn-Lite?retryWrites=true&w=majority",
-    "jwtSecret": "mysecrettoken",
-    "githubToken": "f5d15251660469bea392adfd5e4531d1714c65a5"
-}
