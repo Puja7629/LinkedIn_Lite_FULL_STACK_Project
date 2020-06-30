@@ -108,7 +108,7 @@ npm run build
 
 
 
-### Deploy to Heroku
+### Deploy to Heroku :cloud:	
 
 If you followed the sensible advice above and included `config/default.json` `and config/production.json` in your .gitignore file, then pushing to Heroku will omit your config files from the push.  
 However, Heroku needs these files for a successful build.  
