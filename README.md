@@ -14,7 +14,7 @@ npm i express express-validator bcryptjs config gravator jsonwebtoken mongoose r
  npm i -D nodemon concurrently
  ```
 
-**Chages should be made in package.json** ] Instead of **test** in package.json write this :
+**Chages should be made in package.json** Instead of **test** in package.json write this :
 
 ```bash
 "start": "node server",
