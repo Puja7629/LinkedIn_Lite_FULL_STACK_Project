@@ -184,11 +184,11 @@ and you're good to go :)
 
 ## Demo of the Project :rocket: :100:
 
-```
 
-[Link to my deployed project can be found here](https://linkedin-lite.herokuapp.com/)
 
-```
+[Link to my deployed project can be found here. :sunglasses:	](https://linkedin-lite.herokuapp.com/)
+
+
 
 ![Project Image](Demo.png)
 Cheers! :rocket: :100:	
