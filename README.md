@@ -99,15 +99,6 @@ npm install
 npm run dev
 ```
 
-### Build for production
-
-```bash
-cd client
-npm run build
-```
-
-
-
 ### Deploy to Heroku :cloud:	
 
 If you followed the sensible advice above and included `config/default.json` `and config/production.json` in your .gitignore file, then pushing to Heroku will omit your config files from the push.  
