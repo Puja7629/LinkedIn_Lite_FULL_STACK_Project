@@ -1,5 +1,4 @@
 # Prerequisite :writing_hand:
-
 ## Packages must be installed before start writing the code
 
 ```bash
